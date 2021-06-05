@@ -39,3 +39,13 @@ Q3:Joins
   JOIN employees on companies.Name=employees.Company
   WHERE employees.Role ="Graphic Designer"
 
+Q4:Count & Filter
+-----------------
+1-SELECT name FROM students
+  WHERE points=(SELECT max(points) FROM students);
+2-SELECT avg(points)FROM students;
+3-select count(points) FROM students WHERE points = 500;
+4- SELECT name FROM students WHERE name like '%s%';
+5-SELECT name, points FROM students ORDER BY points DESC;
+
+--------------------------------------------------------

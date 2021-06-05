@@ -5,10 +5,7 @@ Q1:Basic Queries
 4-select points from students where name ="Alex";
 5-insert into students (
 id,name,age,gender,points)
-values(
-8,
-"bob",24,"M",350
-);
+values(8,"bob",24,"M",350);
 6-update students set points=points+250 where name="basma"; 
 7-update students set points=points-100 where name="Alex"; 
 Q2:Creating Table
@@ -29,3 +26,16 @@ CREATE TABLE "graduates" (
  SET Graduation="08/09/2018"
  WHERE name = "Layal";
 3-DELETE FROM students WHERE name = "Layal";
+
+Q3:Joins
+--------
+1-SELECT employees.Name, companies.name, companies.Date
+  FROM employees
+  JOIN companies on companies.name = employees.Company;
+2-SELECT employees.Name FROM employees
+  JOIN companies ON companies.Name = employees.Company
+  WHERE companies.Date<2000
+3-SELECT companies.Name  FROM companies
+  JOIN employees on companies.Name=employees.Company
+  WHERE employees.Role ="Graphic Designer"
+

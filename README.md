@@ -72,7 +72,7 @@ In the **Execute SQL** tab, do the following:
 4. Commit \("Creating Table"\)
 
 ### Joins
-Nourvolume
+
 Now, open the database **carDealership**. You will find 2 tables:
 
 * Companies
